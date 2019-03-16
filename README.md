@@ -5,7 +5,7 @@ For my project I'm doing a loose adaption of the main battle scene in **Independ
 **Behavours**: I hope to use the following behaviours in my project
 
 1. **Seek**: Spaceship navigation
-2. **Offset** Pursue: Spaceship formation
+2. **Offset Pursue**: Spaceship formation
 3. **Arrive**: Enemy spaceship moving towards earth in beginning
 4. **Pursue**: Enemy fight scene
 5. **Flee**: Fight scene if spaceships get too damaged (maybe)
