@@ -136,8 +136,8 @@ public class GameManager : MonoBehaviour
 	    	{
 	    		float heightOffset = random.NextFloat(-(enemyHeightRange / 2), enemyHeightRange / 2);
 
-		    	float3 pos = new float3(50 * cols, battleBaseHeight + heightOffset, 1050.0f + rows * 30.0f);
-		    	float3 target = new float3(50 * cols, battleBaseHeight + heightOffset, 850.0f + rows * 30.0f);
+		    	float3 pos = new float3(50 * cols, battleBaseHeight + heightOffset + 200, 1650.0f + rows * 30.0f);
+		    	float3 target = new float3(50 * cols, battleBaseHeight + heightOffset, 1150.0f + rows * 30.0f);
 
 				entityManager.SetComponentData(enemyEntityArray[cols * enemyRows + rows], new Translation {Value = pos});
 				entityManager.SetSharedComponentData<RenderMesh>(enemyEntityArray[cols * enemyRows + rows], enemyRenderMesh);
@@ -166,8 +166,8 @@ public class GameManager : MonoBehaviour
     		{
 				float heightOffset = random.NextFloat(-(defenderHeightRange / 2), defenderHeightRange / 2);
 
-				float3 pos = new float3(50 * cols, battleBaseHeight + heightOffset, 250.0f + rows * 30.0f);
-		    	float3 target = new float3(50 * cols, battleBaseHeight + heightOffset, 450.0f + rows * 30.0f);
+				float3 pos = new float3(50 * cols, battleBaseHeight + heightOffset, 450.0f + rows * 30.0f);
+		    	float3 target = new float3(50 * cols, battleBaseHeight + heightOffset, 850.0f + rows * 30.0f);
 
 				entityManager.SetComponentData(defenderEntityArray[cols * defenderRows + rows], new Translation {Value = pos});
 				entityManager.SetSharedComponentData<RenderMesh>(defenderEntityArray[cols * defenderRows + rows], defenderRenderMesh);
